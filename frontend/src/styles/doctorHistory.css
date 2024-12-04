@@ -1,0 +1,149 @@
+/* Background and section styles */
+.doctor-consultation-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 2000px rgba(1, 0, 0, 0.7); */
+    height: calc(100vh - 110px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 70px;
+    
+}
+
+.consultation-container {
+    padding-top: 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Title Styling */
+.title {
+    font-size: 1.875rem;  /* 3xl */
+    font-weight: 500;     /* medium */
+    text-align: center;
+    color: black;
+    margin-bottom: 4rem;  /* mb-16 */
+}
+
+/* Table styling */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.consultation-table {
+    width: 100%;
+    color: black; /* gray-400 */
+}
+
+.table-head {
+    font-size: 0.75rem;   /* text-xs */
+    text-transform: uppercase;
+    color: black;
+    background-color: transparent;
+    border-bottom: 1px solid black;  /* gray-400 */
+}
+
+.table-row {
+    background-color: transparent;
+    border-bottom: 1px solid black;  /* gray-50 */
+    color: black;
+}
+
+.table-cell {
+    padding: 1rem;
+    color: black; /* Add for black text */
+}
+
+/* Link styles */
+.view-link, .resume-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.view-link:hover, .resume-link:hover {
+    opacity: 0.8;
+}
+
+/* Button styles */
+button.view-btn,
+button.resume-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+button.view-btn {
+    background-color: blue;
+}
+
+button.resume-btn {
+    background-color: green;
+}
+
+button.view-btn:hover,
+button.resume-btn:hover {
+    opacity: 0.8;
+}
+
+/* No consultations message */
+.no-consultations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 16rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+/* Media Queries for responsiveness */
+
+/* Smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .consultation-table th, .consultation-table td {
+        padding: 0.5rem;
+    }
+
+    .view-link, .resume-link {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    button.view-btn, button.resume-btn {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .no-consultations {
+        height: 12rem;
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .consultation-table {
+        font-size: 0.875rem;
+    }
+
+    .consultation-table th, .consultation-table td {
+        padding: 0.25rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    button.view-btn, button.resume-btn {
+        padding: 0.375rem;
+        font-size: 0.75rem;
+    }
+
+    .no-consultations {
+        height: 10rem;
+    }
+}

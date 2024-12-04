@@ -1,0 +1,77 @@
+.hospital__footer {
+    --hospital-primary-color: #2d9cdb; /* Use a calming medical blue */
+    --hospital-bg-color: #f4f8fb; /* Light, sterile white background */
+    --hospital-text-color: #333; /* Dark grey text for readability */
+    background-color: var(--hospital-bg-color);
+    color: var(--hospital-text-color);
+    padding: 50px 0;
+  }
+  
+  .hospital__footer h5 {
+    color: var(--hospital-primary-color); /* Add primary color to section titles */
+    font-size: 1.25rem;
+  }
+  
+  .hospital__footer-quick-links,
+  .hospital__footer-social {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hospital__footer-quick-links li,
+  .hospital__footer-social li {
+    margin-bottom: 10px;
+  }
+  
+  .hospital__footer-quick-links li a,
+  .hospital__footer-social li a {
+    color: var(--hospital-text-color);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hospital__footer-quick-links li a:hover,
+  .hospital__footer-social li a:hover {
+    opacity: 1;
+    color: var(--hospital-primary-color); /* Change color on hover */
+  }
+  
+  .hospital__footer-social li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .hospital__footer-social li a {
+    font-size: 20px;
+    opacity: 0.7;
+  }
+  
+  .hospital__footer-social li a:hover {
+    opacity: 1;
+  }
+  
+  .hospital__footer-copyright {
+    margin-top: 20px;
+    opacity: 0.6;
+  }
+  
+  .hospital__footer .form-select,
+  .hospital__footer .form-control {
+    background-color: rgba(45, 156, 219, 0.1); /* Light medical blue */
+    color: var(--hospital-text-color);
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .hospital__footer .form-select:focus,
+  .hospital__footer .form-control:focus {
+    box-shadow: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hospital__footer {
+      padding: 60px 0;
+    }
+  }
+  

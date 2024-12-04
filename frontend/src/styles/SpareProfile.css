@@ -1,0 +1,89 @@
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.profile-title {
+    font-size: 45px; /* Increase font size */
+    font-weight: bold;
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add some space below the title */
+    color: black; /* Optional: Set a color */
+}
+
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.profile-button:hover, .check-disease-button:hover, .history-button:hover {
+    background: #682773;
+    cursor: pointer;
+}
+
+.profile-button:focus, .check-disease-button:focus, .history-button:focus {
+    background: #682773;
+    box-shadow: none;
+}
+
+.profile-button:active, .check-disease-button:active, .history-button:active {
+    background: #682773;
+    box-shadow: none;
+}
+
+.check-disease-button, .history-button {
+    background: #94DF4A;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.check-disease-button:hover {
+    background-color: #8ACCD3;
+}
+
+.history-button:hover {
+    background-color:#8ACCD3;
+}
+
+.labels {
+    font-size: 30px;
+    color: #6c757d;
+}
+
+.font-weight-bold {
+    font-size: 30px; /* Increase value text size to 30px */
+}
+
+.action-buttons {
+    margin-top: 20px;
+    color:black;
+    background-color: #E7F3F8;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8;
+}
+
+.action-link, .history-link {
+    text-decoration: none;
+    color: black; /* Set the link color to black */
+    font-size: 30px; /* Ensure link text inside button is 30px */
+}
+
+.action-link:hover, .history-link:hover {
+    color: black; /* Optional: Change the hover color to match the design */
+}

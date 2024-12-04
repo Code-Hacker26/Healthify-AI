@@ -1,0 +1,123 @@
+.predict-section {
+    background-image: url('./login/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Ensures the background stays fixed when scrolling */
+    min-height: 100vh; /* Minimum height is full viewport height */
+    padding: 20px;
+    margin-top: 100px; /* Pushes the section below the navbar */
+}
+
+
+.content-wrapper {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.symptom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.symptom-column, .selected-symptoms-column {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white; /* Set background to white */
+    color: black; /* Set font color to black */
+    padding: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.symptom-column:hover, .selected-symptoms-column:hover {
+    background: linear-gradient(to right, white, #007bff); /* Gradient from white to blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+}
+
+.symptom-column h2, .selected-symptoms-column h2 {
+    font-weight: bold; /* Make headings bold */
+    text-align: center; /* Center align headings */
+}
+
+
+
+.add-symptoms-btn button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result-box {
+    color: black;
+}
+
+.confidence-bar {
+    background-color: #ddd;
+    border: 4px solid black;
+    overflow: hidden;
+}
+
+.confidence-bar div {
+    background-color: #4caf50;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
+
+.no-result-box {
+    color: black;
+}
+
+.symptom-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.symptom-tag {
+    background-color: #f1f8ff;
+    color: #007bff;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.symptom-tag:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.predict-btn-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.predict-btn-wrapper button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.symptoms-list {
+    position: relative; /* Ensure the container can be positioned relative to its normal position */
+    height: 100%; /* Full height of the parent container */
+    width: 100%; /* Full width of the parent container */
+    padding: 1rem; /* Adjust padding as needed */
+    max-width: 2xl; /* Ensure this matches your design specifications */
+    margin-top: 130px; /* Push the container down by 130px */
+}

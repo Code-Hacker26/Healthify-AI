@@ -1,0 +1,125 @@
+/* Main container to center everything */
+
+
+/* Form styling */
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px; /* Restrict form width for responsiveness */
+    margin: 0 auto;
+    padding: 2rem; /* Add some padding for the form inside the border */
+    border: 5px dashed blue; /* Blue dashed border */
+    position: relative;
+    /* animation: rotateBorder 5s linear infinite; Apply rotation animation */
+}
+
+/* Keyframes for rotating the border */
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg); /* Start rotation */
+    }
+    to {
+        transform: rotate(360deg); /* End rotation */
+    }
+}
+
+.modal-with-bg {
+    background-image: url('./images/Bg3.jpg'); /* Update path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background color for overlay effect */
+}
+
+
+
+/* Modal title styling */
+.modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center; /* Center the title */
+    color: var(--color-text-primary);
+}
+
+/* Date input styling */
+.date-input {
+    background-color: var(--color-input-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    width: 100%;
+}
+
+.date-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* File input styling */
+.file-input {
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background-color: var(--color-input-bg);
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    width: 100%;
+}
+
+.file-input:hover {
+    background-color: var(--color-input-hover-bg);
+}
+
+.file-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.submit-button {
+    background-color: blue;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center text in the button */
+}
+
+.submit-button:hover {
+    background-color: green;
+    color: black;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-body {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    form {
+        max-width: 90%; /* Allow the form to take more space on smaller screens */
+    }
+
+    .modal-title {
+        font-size: 1.5rem; /* Adjust the title font size */
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem; /* Reduce button padding on smaller screens */
+    }
+}

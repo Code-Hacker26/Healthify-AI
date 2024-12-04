@@ -1,0 +1,169 @@
+/* Background and container styling */
+.patient-register-section {
+    background-image: url('../login/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* Container that holds the video */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: auto; /* Hide overflow for a cleaner look */
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    z-index: -1; /* Place the video behind the content */
+}
+
+.patient-register-container {
+    position: relative; /* Ensure it's above the video */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: auto;
+    max-width: 80%;
+    background-color: rgba(136, 209, 216, 0.8); /* Slightly transparent background */
+    border-radius: 0.5rem; /* Rounded corners */
+    border: 5px solid #fff; /* Thick border, adjust color and width as needed */
+    margin-top: 100px;
+}
+
+
+
+/* Box styling */
+.patient-register-box {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.1) -6px -2px 16px 0px;
+    background: #ffffff;
+    border-radius: 1rem;
+    max-width: 40rem;
+    padding: 2rem; /* Similar padding */
+}
+
+/* Form input and label styles */
+.patient-register-input {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    color: black;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.75rem; /* Increased padding to match login */
+    margin-bottom: 1.5rem; /* Increased margin-bottom */
+}
+
+.patient-register-label {
+    color: black;
+    font-size: 1rem; /* Increased font-size */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Button styling */
+.patient-register-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem; /* Increased font-size */
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.patient-register-button:hover {
+    background-color: #1d4ed8;
+}
+
+.patient-register-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.5);
+}
+
+/* Error alert */
+.patient-register-alert {
+    padding: 1.5rem; /* Increased padding */
+    margin-bottom: 1.5rem; /* Increased margin-bottom */
+    font-size: 1rem;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border-radius: 0.5rem;
+}
+
+/* Text styling */
+.patient-register-text-sm {
+    font-size: 1rem; /* Keep the font-size increased */
+    color: #1a202c; /* Dark gray for a clean, modern look */
+    font-weight: 600; /* Slightly bolder for emphasis */
+    letter-spacing: 0.5px; /* Add a little letter spacing */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.patient-register-text-sm:hover {
+    color: #2563eb; /* Change color on hover to blue */
+}
+
+/* Link styling */
+.patient-register-link {
+    font-size: 2rem;
+    font-weight: 600; /* Bold text to make the link stand out */
+    color: blue; /* Dark gray for modern, clean look */
+    text-decoration: none; /* Remove underline by default */
+    border-bottom: 2px solid transparent; /* Add a bottom border */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+}
+
+.patient-register-link:hover {
+    color: #2563eb; /* Blue on hover */
+    border-bottom-color: #2563eb; /* Underline on hover */
+    text-decoration: none; /* Ensure no text underline */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .patient-register-box {
+        padding: 1.5rem; /* Adjust padding for mobile */
+    }
+
+    .patient-register-input {
+        padding: 0.625rem;
+    }
+
+    .patient-register-button {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .patient-register-container {
+        width: 100%;
+        padding: 1.5rem; /* Increased padding for mobile */
+    }
+
+    .patient-register-input {
+        padding: 0.5rem;
+    }
+
+    .patient-register-button {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+}

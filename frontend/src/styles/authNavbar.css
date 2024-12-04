@@ -1,0 +1,90 @@
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.auth-navbar {
+    background: linear-gradient(45deg, #0000ff, #00bfff, #1e90ff, #87cefa);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000; /* Ensure it's above all other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+
+.auth-navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.auth-navbar .logo img {
+    height: 40px;
+    width: auto;
+}
+
+.auth-navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.auth-navbar .toggle-button {
+    display: none; /* Hide toggle button by default */
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.auth-navbar .toggle-button .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+.auth-navbar .nav-links.active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .auth-navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(45deg, #0000ff, #00bfff, #1e90ff, #87cefa);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .auth-navbar .toggle-button {
+        display: block;
+    }
+}

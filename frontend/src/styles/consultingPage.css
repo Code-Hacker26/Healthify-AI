@@ -1,0 +1,153 @@
+.consultation-container {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.consultation-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.consultation-details {
+    background-color: #f9fafb;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.consultation-title {
+    font-size: 1.5rem; /* Increase the font size as needed */
+    margin-bottom: 1.25rem;
+    text-align: center; /* Center-align the text */
+}
+
+.consultation-symptoms {
+    border: 1px solid #000; /* Adjust color and thickness as needed */
+    text-align: center; /* Center-align the text inside */
+    font-size: 1rem; /* Set the font size */
+    padding: 0.5rem; /* Optional: add some padding for spacing */
+}
+.confidence-score-section, .consultation-date, .consultation-status {
+    margin-bottom: 2rem;
+}
+
+.consultation-label {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.symptoms-list {
+    margin-left: 1.25rem;
+}
+
+.confidence-bar {
+    background-color: #e5e7eb;
+    border-radius: 0.375rem;
+    height: 2rem;
+    width: 100%; /* Ensure it takes the full width */
+    position: relative; /* For positioning the fill */
+}
+
+.confidence-fill {
+   
+    border-radius: .2rem;
+    height: 2rem; /* Fill the height of the confidence bar */
+    text-align: center;
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+
+.consultation-date-text, .status-text {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.consultation-actions {
+     /* Set the background color to blue */
+    padding: 1rem; /* Optional: add padding for spacing */
+}
+
+.consultation-actions button {
+    background-color: #88D1D8;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+.download-button {
+    border: 1px solid #1f2937;
+    color: #1f2937;
+    transition: 0.3s ease;
+    padding: 1rem;
+}
+
+.download-button:hover {
+    background-color: #1f2937;
+    color: #fff;
+}
+
+.rating-button,
+.cancel-button {
+    border: 1px solid #1f2937;
+    transition: 0.3s ease;
+}
+
+/* Add gap between buttons */
+.consultation-actions button + button {
+    margin-left: 0.5rem; /* Set gap of 0.5rem */
+}
+
+.rating-button:hover {
+    background-color: #1f2937;
+    color: #fff;
+}
+
+.cancel-button {
+    border-color: #b91c1c;
+    color: #b91c1c;
+}
+
+.cancel-button:hover {
+    background-color: #b91c1c;
+    color: #fff;
+}
+
+.chatbot-section {
+    width: 100%;
+}
+
+.chatbot-box {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.chatbot-header {
+    background-color: #3b82f6;
+    padding: 1rem;
+}
+
+.chatbot-title {
+    font-size: 1.125rem;
+}
+
+.chatbot-messages {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.chatbot-message {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+.message-right {
+    text-align: right;
+}
+
+.chatbot-input-section {
+    border-top: 1px solid #e5e7eb;
+}
+
+/* .chatbot-input {
+    width:
+} */
